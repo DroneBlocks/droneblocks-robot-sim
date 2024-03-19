@@ -7,6 +7,7 @@ p.setPhysicsEngineParameter(fixedTimeStep=0.002,
                             numSolverIterations=50,#300, 
                             solverResidualThreshold=1e-30, 
                             numSubSteps=1,)
+p.configureDebugVisualizer(p.COV_ENABLE_GUI,0)
 
 # Load a plane and a few objects
 planeId = p.loadURDF("assets/plane.urdf", useMaximalCoordinates=True)
@@ -25,7 +26,7 @@ p.resetDebugVisualizerCamera(cameraDistance, cameraYaw, cameraPitch, cameraTarge
 
 # Simulate
 ts = time.time()
-for i in range(10000):
+for i in range(100000):
     p.stepSimulation()
     time.sleep(1./500.)
     if i % 500 == 0:

@@ -6,9 +6,9 @@ from _03_stand_robots import Robot
 
 if __name__ == "__main__":
 
-    # robot = Robot(robot_name="Go1", fix_base=True)
+    robot = Robot(robot_name="Go1", fix_base=True)
     # robot = Robot(robot_name="Go2", fix_base=True)
-    robot = Robot(robot_name="H1", fix_base=True)
+    # robot = Robot(robot_name="H1", fix_base=True)
     # robot = Robot(robot_name="H1_hands", fix_base=True)
 
     dt = 0.002

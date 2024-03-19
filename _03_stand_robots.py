@@ -84,15 +84,15 @@ class Robot:
 
 if __name__ == "__main__":
 
-    robot = Robot(robot_name="Go1", fix_base=False)
+    # robot = Robot(robot_name="Go1", fix_base=False)
     # robot = Robot(robot_name="Go2", fix_base=False)
     # robot = Robot(robot_name="H1", fix_base=False)
-    # robot = Robot(robot_name="H1_hands", fix_base=False)
+    robot = Robot(robot_name="H1_hands", fix_base=False)
 
     # Simulate
     joint_pos_targets = robot.initial_joint_positions
     dt = 0.002
-    time_to_simulate = 20 # seconds
+    time_to_simulate = 100 # seconds
     steps_to_simulate = int(time_to_simulate / dt)
 
     for i in range(steps_to_simulate):

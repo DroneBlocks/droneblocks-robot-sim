@@ -119,7 +119,7 @@ class UnitreeSDKEmulator:
             raise Exception("Invalid mode for UDP communication with the robot!")
         
         udp = UDP()
-        udp.add_robot(Robot(robot_name="Go2", fix_base=False))
+        udp.add_robot(Robot(robot_name="Go1", fix_base=False))
         return udp
 
     def Safety(robot_type):
