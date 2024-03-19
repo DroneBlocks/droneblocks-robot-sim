@@ -72,7 +72,7 @@ def load_robot(
 
 if __name__ == "__main__":
 
-    robot_name = "H1_hands"
+    robot_name = "Go1"
 
     if robot_name == "Go1":
         urdf_path="assets/go1_description/urdf/go1.urdf"
